@@ -15,6 +15,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+div.a {
+  border: 1px solid gray;
+  background-color: #003333;
+  width: 500px;
+  margin-left: 380px
+}
 </style>
 <body class="w3-black">
 
@@ -54,16 +62,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  <div class="a">
     <!--<h2 class="w3-text-light-grey">Description</h2>-->
     <!--<hr style="width:200px" class="w3-opacity">-->
 
     <code class = "python">
-      <p class="highlight">buildSite(awesome = True)</p>
+      <p class="highlight">buildSite(awesome = <a style = "color:#ace600">True</a>)</p>
       <p style="color:green">Building... </p>
-      <p style="color:red"># Error: invalid syntax # </p>
-
-      <p>='( </p>
+      <p style="color:green">Building... 50% </p>
+      <p style="color:green">Building... 80% </p>
+      <p style="color:red"># Error: invalid syntax # Learn to code...... </p>
     </code>
 
 
